@@ -1,0 +1,14 @@
+D:\Project\DazeUtils\UtilsCore\bin\Release\UtilsCore.dll
+D:\Project\DazeUtils\UtilsCore\bin\Release\UtilsCore.pdb
+D:\Project\DazeUtils\UtilsCore\bin\Release\Aliyun.OSS.dll
+D:\Project\DazeUtils\UtilsCore\bin\Release\Aliyun.OSS.pdb
+D:\Project\DazeUtils\UtilsCore\bin\Release\Aliyun.OSS.xml
+D:\Project\DazeUtils\UtilsCore\obj\Release\UtilsCore.dll
+D:\Project\DazeUtils\UtilsCore\obj\Release\UtilsCore.pdb
+D:\Project\DazeUtils\UtilsCore\bin\Release\UtilsCore.XML
+D:\GitHub\Project\UtilsCore\src\UtilsCore\UtilsCore\bin\Release\UtilsCore.XML
+D:\GitHub\Project\UtilsCore\src\UtilsCore\UtilsCore\bin\Release\UtilsCore.dll
+D:\GitHub\Project\UtilsCore\src\UtilsCore\UtilsCore\bin\Release\UtilsCore.pdb
+D:\GitHub\Project\UtilsCore\src\UtilsCore\UtilsCore\obj\Release\UtilsCore.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\UtilsCore\src\UtilsCore\UtilsCore\obj\Release\UtilsCore.dll
+D:\GitHub\Project\UtilsCore\src\UtilsCore\UtilsCore\obj\Release\UtilsCore.pdb
