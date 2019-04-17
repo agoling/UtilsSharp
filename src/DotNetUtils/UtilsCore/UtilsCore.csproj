@@ -49,7 +49,6 @@
     <Compile Include="CnDateHelper.cs" />
     <Compile Include="CryptoHelper.cs" />
     <Compile Include="DownLoadHelper.cs" />
-    <Compile Include="Interface\IDependency.cs" />
     <Compile Include="MapperHelper.cs" />
     <Compile Include="RandomHelper.cs" />
     <Compile Include="Result\BaseResult.cs" />
