@@ -492,7 +492,7 @@
             文件下载帮助类
             </summary>
         </member>
-        <member name="M:UtilsCore.DownLoadHelper.ResponseFile(System.Web.HttpResponse,System.Byte[],System.String)">
+        <member name="M:UtilsCore.DownLoadHelper.ResponseFile(System.Web.HttpResponseBase,System.Byte[],System.String)">
             <summary>
             网页文件字节流下载
             </summary>
@@ -511,61 +511,6 @@
             <param name="fullPath">带文件名下载路径</param>
             <param name="speed">每秒允许下载的字节数</param>
             <returns>返回是否成功</returns>
-        </member>
-        <member name="T:UtilsCore.Interface.IDependency">
-            <summary>
-            依赖接口标识
-            </summary>
-        </member>
-        <member name="T:UtilsCore.Interface.ISingletonDependency">
-            <summary>
-            表示实现者是一个单列依赖。
-            </summary>
-        </member>
-        <member name="T:UtilsCore.Interface.ITransientDependency">
-            <summary>
-            表示实现者是一个瞬态依赖。
-            </summary>
-        </member>
-        <member name="T:UtilsCore.Interface.IUnitOfWorkDependency">
-            <summary>
-            表示实现者是一个工作单元依赖。
-            </summary>
-        </member>
-        <member name="T:UtilsCore.Interface.IPagedList`1">
-             <summary>
-            列表分页接口
-             </summary>
-        </member>
-        <member name="P:UtilsCore.Interface.IPagedList`1.PageIndex">
-            <summary>
-            当前页
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Interface.IPagedList`1.PageSize">
-            <summary>
-            每页显示条数
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Interface.IPagedList`1.TotalCount">
-            <summary>
-            总记录数
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Interface.IPagedList`1.TotalPages">
-            <summary>
-            总页数
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Interface.IPagedList`1.HasPreviousPage">
-            <summary>
-            是否存在上一页
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Interface.IPagedList`1.HasNextPage">
-            <summary>
-            是否存在下一页
-            </summary>
         </member>
         <member name="T:UtilsCore.MapperHelper`2">
             <summary>
@@ -943,11 +888,12 @@
             图片帮助类
             </summary>
         </member>
-        <member name="M:UtilsCore.ImageHelper.BitmapToBytes(System.Drawing.Bitmap)">
+        <member name="M:UtilsCore.ImageHelper.BitmapToBytes(System.Drawing.Bitmap,System.Drawing.Imaging.ImageFormat)">
             <summary>
             Bitmap转bytes
             </summary>
             <param name="bitmap">bitmap</param>
+            <param name="imageFormat">图像格式</param>
             <returns></returns>
         </member>
         <member name="M:UtilsCore.ImageHelper.ImageToBytes(System.Drawing.Image)">
@@ -1132,6 +1078,41 @@
             </summary>
             <param name="pPath">图片路径</param>
             <param name="pSavedPath">保存路径</param>
+        </member>
+        <member name="T:UtilsCore.Interface.IPagedList`1">
+             <summary>
+            列表分页接口
+             </summary>
+        </member>
+        <member name="P:UtilsCore.Interface.IPagedList`1.PageIndex">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Interface.IPagedList`1.PageSize">
+            <summary>
+            每页显示条数
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Interface.IPagedList`1.TotalCount">
+            <summary>
+            总记录数
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Interface.IPagedList`1.TotalPages">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Interface.IPagedList`1.HasPreviousPage">
+            <summary>
+            是否存在上一页
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Interface.IPagedList`1.HasNextPage">
+            <summary>
+            是否存在下一页
+            </summary>
         </member>
         <member name="T:UtilsCore.StringHelper">
             <summary>
