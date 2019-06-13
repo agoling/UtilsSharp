@@ -37,3 +37,5 @@ D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\bin\Debug\UtilsCore.dll
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\bin\Debug\UtilsCore.pdb
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Debug\UtilsCore.dll
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Debug\UtilsCore.pdb
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Debug\UtilsCore.csprojAssemblyReference.cache
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Debug\UtilsCore.csproj.CoreCompileInputs.cache

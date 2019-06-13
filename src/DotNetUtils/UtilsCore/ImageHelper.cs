@@ -143,6 +143,50 @@ namespace UtilsCore
             File.WriteAllBytes(file, bytes);
             return file;
         }
+
+        /// <summary>
+        /// 将图片旋转到正确位置
+        /// 旋转角度  参数值
+        /// 0°	        1
+        /// 顺时针90°	6
+        /// 逆时针90°	8
+        /// 180°	    3
+        /// </summary>
+        /// <param name="image">图片对象</param>
+        /// <returns></returns>
+        public static void OrientationImage(Image image)
+        {
+            if (Array.IndexOf(image.PropertyIdList, 274) <= -1) return;
+            var orientation = (int)image.GetPropertyItem(274).Value[0];
+            switch (orientation)
+            {
+                case 1:
+                    // No rotation required.
+                    break;
+                case 2:
+                    image.RotateFlip(RotateFlipType.RotateNoneFlipX);
+                    break;
+                case 3:
+                    image.RotateFlip(RotateFlipType.Rotate180FlipNone);
+                    break;
+                case 4:
+                    image.RotateFlip(RotateFlipType.Rotate180FlipX);
+                    break;
+                case 5:
+                    image.RotateFlip(RotateFlipType.Rotate90FlipX);
+                    break;
+                case 6:
+                    image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+                    break;
+                case 7:
+                    image.RotateFlip(RotateFlipType.Rotate270FlipX);
+                    break;
+                case 8:
+                    image.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                    break;
+            }
+            image.RemovePropertyItem(274);
+        }
     }
 
     /// <summary>
