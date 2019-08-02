@@ -637,6 +637,17 @@
             返回对象结果
             </summary>
         </member>
+        <member name="T:UtilsCore.Result.BaseEntityResult`1">
+            <summary>
+            返回结果模型
+            </summary>
+            <typeparam name="T">自定义结果模型</typeparam>
+        </member>
+        <member name="P:UtilsCore.Result.BaseEntityResult`1.Data">
+            <summary>
+            返回对象结果
+            </summary>
+        </member>
         <member name="T:UtilsCore.Result.BasePagedResult`1">
             <summary>
             返回分页结果模型
@@ -916,6 +927,18 @@
             </summary>
             <param name="fileName">图片路径</param>
             <param name="bytes">bytes</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.ImageHelper.OrientationImage(System.Drawing.Image)">
+            <summary>
+            将图片旋转到正确位置
+            旋转角度  参数值
+            0°	        1
+            顺时针90°	6
+            逆时针90°	8
+            180°	    3
+            </summary>
+            <param name="image">图片对象</param>
             <returns></returns>
         </member>
         <member name="T:UtilsCore.ImageManager">
