@@ -680,24 +680,12 @@
             </summary>
             <param name="result">基础结果信息</param>
         </member>
-        <member name="M:UtilsCore.Result.BaseInfoResult.SetError(System.String,System.Enum)">
+        <member name="M:UtilsCore.Result.BaseInfoResult.SetError(System.String,System.Nullable{System.Int32})">
             <summary>
             设置错误提示
             </summary>
             <param name="message">提示信息</param>
             <param name="code">错误码</param>
-        </member>
-        <member name="M:UtilsCore.Result.BaseInfoResult.SetError(System.Enum)">
-            <summary>
-            设置错误提示
-            </summary>
-            <param name="code">错误码</param>
-        </member>
-        <member name="M:UtilsCore.Result.BaseInfoResult.SetError(System.String)">
-            <summary>
-            设置错误消息
-            </summary>
-            <param name="message">提示信息</param>
         </member>
         <member name="T:UtilsCore.Result.BasePagedInfoResult`1">
             <summary>
@@ -748,21 +736,6 @@
         <member name="P:UtilsCore.Result.BasePagedInfoResult`1.Params">
             <summary>
             参数信息
-            </summary>
-        </member>
-        <member name="T:UtilsCore.Result.BaseHttpCode">
-            <summary>
-            基础提示码
-            </summary>
-        </member>
-        <member name="F:UtilsCore.Result.BaseHttpCode.操作成功">
-            <summary>
-            操作成功
-            </summary>
-        </member>
-        <member name="F:UtilsCore.Result.BaseHttpCode.业务提示">
-            <summary>
-            业务提示
             </summary>
         </member>
         <member name="T:UtilsCore.Result.EnumEntity">

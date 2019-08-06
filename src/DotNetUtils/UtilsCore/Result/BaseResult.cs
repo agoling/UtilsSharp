@@ -52,7 +52,7 @@ namespace UtilsCore.Result
         /// <summary>
         /// 错误码:200是操作成功
         /// </summary>
-        public Enum ErrorCode { get; set; } = BaseHttpCode.操作成功;
+        public int? ErrorCode { get; set; } = 200;
 
         /// <summary>
         /// 提示信息
@@ -75,29 +75,11 @@ namespace UtilsCore.Result
         /// </summary>
         /// <param name="message">提示信息</param>
         /// <param name="code">错误码</param>
-        public void SetError(string message, Enum code)
+        public void SetError(string message, int? code)
         {
             Success = false;
             Message = message;
             ErrorCode = code;
-        }
-
-        /// <summary>
-        /// 设置错误提示
-        /// </summary>
-        /// <param name="code">错误码</param>
-        public void SetError(Enum code)
-        {
-            SetError(code?.ToString(), code);
-        }
-
-        /// <summary>
-        /// 设置错误消息
-        /// </summary>
-        /// <param name="message">提示信息</param>
-        public void SetError(string message)
-        {
-            SetError(message, BaseHttpCode.业务提示);
         }
     }
 
@@ -162,22 +144,6 @@ namespace UtilsCore.Result
         /// 参数信息
         /// </summary>
         public object Params { get; set; }
-
-    }
-
-    /// <summary>
-    /// 基础提示码
-    /// </summary>
-    public enum BaseHttpCode
-    {
-        /// <summary>
-        /// 操作成功
-        /// </summary>
-        操作成功 = 200,
-
-        /// <summary>
-        /// 业务提示
-        /// </summary>
-        业务提示 = 9999
+        
     }
 }
