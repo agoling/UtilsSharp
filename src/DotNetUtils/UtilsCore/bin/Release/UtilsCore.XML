@@ -687,6 +687,12 @@
             <param name="message">提示信息</param>
             <param name="code">错误码</param>
         </member>
+        <member name="M:UtilsCore.Result.BaseInfoResult.SetError(System.String)">
+            <summary>
+            设置错误提示
+            </summary>
+            <param name="message">提示信息</param>
+        </member>
         <member name="T:UtilsCore.Result.BasePagedInfoResult`1">
             <summary>
             分页基础结果信息
