@@ -5,7 +5,7 @@
 
 文档说明见：https：//blog.csdn.net/agoling/article/details/87068943
 
-BaseResult类前后端接口返回参命名规范
+"BaseResult"类前后端接口返回参命名规范
 
 一、命名规范
 小驼峰法命名：除第一个单词之外，其他单词首字母大写
