@@ -61,9 +61,9 @@ namespace UtilsCore.Result
         /// 提示信息
         /// </summary>
         public string Msg { get; set; } = "请求成功";
-        
+
         /// <summary>
-        /// 设置错误消息
+        /// 设置错误提示
         /// </summary>
         /// <param name="result">基础结果信息</param>
         public void SetError(BaseInfoResult result)
