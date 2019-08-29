@@ -18,4 +18,7 @@ D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\bin\Release\UtilsCore.pd
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Release\UtilsCore.csproj.CoreCompileInputs.cache
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Release\UtilsCore.dll
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Release\UtilsCore.pdb
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\bin\Release\Dependency.dll
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\bin\Release\Dependency.pdb
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Release\UtilsCore.csprojAssemblyReference.cache
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Release\UtilsCore.csproj.CopyComplete

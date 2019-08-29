@@ -22,3 +22,4 @@ D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\obj\Release\WebApiHel
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\obj\Release\WebApiHelper.csproj.CopyComplete
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\obj\Release\WebApiHelper.dll
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\obj\Release\WebApiHelper.pdb
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\bin\Release\WebApiHelper.xml

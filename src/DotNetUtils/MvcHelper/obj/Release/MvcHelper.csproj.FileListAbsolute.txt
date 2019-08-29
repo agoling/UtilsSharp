@@ -26,3 +26,6 @@ D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\obj\Release\MvcHelper.cs
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\obj\Release\MvcHelper.csproj.CopyComplete
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\obj\Release\MvcHelper.dll
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\obj\Release\MvcHelper.pdb
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\bin\Release\Newtonsoft.Json.dll
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\bin\Release\Newtonsoft.Json.xml
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\bin\Release\MvcHelper.xml

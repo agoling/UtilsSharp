@@ -9,5 +9,6 @@ namespace Dependency
     /// </summary>
     public interface IUnitOfWorkDependency: IDependency
     {
+
     }
 }

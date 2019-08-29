@@ -632,7 +632,7 @@
             </summary>
             <typeparam name="T">自定义结果模型</typeparam>
         </member>
-        <member name="P:UtilsCore.Result.BaseResult`1.Data">
+        <member name="P:UtilsCore.Result.BaseResult`1.Result">
             <summary>
             返回对象结果
             </summary>
@@ -643,7 +643,7 @@
             </summary>
             <typeparam name="T">自定义结果模型</typeparam>
         </member>
-        <member name="P:UtilsCore.Result.BaseEntityResult`1.Data">
+        <member name="P:UtilsCore.Result.BaseEntityResult`1.Result">
             <summary>
             返回对象结果
             </summary>
@@ -659,17 +659,20 @@
             基础结果信息
             </summary>
         </member>
-        <member name="P:UtilsCore.Result.BaseInfoResult.Success">
-            <summary>
-            是否操作成功
-            </summary>
+        <member name="P:UtilsCore.Result.BaseInfoResult.Code">
+             <summary>
+             返回码	标识	说明
+            200	success 请求成功
+            999	defaultError 系统繁忙，此时请开发者稍候再试
+            3000	nullData 未找到数据
+            4000	notLogin 未登录
+            5000	exception 异常
+            5010	dataIsValid 数据验证不通过
+            6000	dataExpire 数据过期
+            7000	businessError 默认业务性异常
+             </summary>
         </member>
-        <member name="P:UtilsCore.Result.BaseInfoResult.ErrorCode">
-            <summary>
-            错误码:200是操作成功
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Result.BaseInfoResult.Message">
+        <member name="P:UtilsCore.Result.BaseInfoResult.Msg">
             <summary>
             提示信息
             </summary>
@@ -680,18 +683,18 @@
             </summary>
             <param name="result">基础结果信息</param>
         </member>
-        <member name="M:UtilsCore.Result.BaseInfoResult.SetError(System.String,System.Nullable{System.Int32})">
+        <member name="M:UtilsCore.Result.BaseInfoResult.SetError(System.String,System.Int32)">
             <summary>
             设置错误提示
             </summary>
-            <param name="message">提示信息</param>
+            <param name="msg">提示信息</param>
             <param name="code">错误码</param>
         </member>
         <member name="M:UtilsCore.Result.BaseInfoResult.SetError(System.String)">
             <summary>
             设置错误提示
             </summary>
-            <param name="message">提示信息</param>
+            <param name="msg">提示信息</param>
         </member>
         <member name="T:UtilsCore.Result.BasePagedInfoResult`1">
             <summary>

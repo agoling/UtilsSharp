@@ -64,7 +64,12 @@
     <Compile Include="VerificationCodeHelper.cs" />
     <Compile Include="WebHelper.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Dependency\Dependency.csproj">
+      <Project>{96f51a47-cc04-4378-a79d-2ac0c2cb1016}</Project>
+      <Name>Dependency</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
