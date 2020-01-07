@@ -55,7 +55,7 @@ namespace UtilsCore
         /// </summary>
         /// <param name="str">字符串</param>
         /// <returns></returns>
-        public double GetLength(string str)
+        public double GetCharLength(string str)
         {
             if (str.Length == 0) return 0;
             var ascii = new ASCIIEncoding();
@@ -79,9 +79,9 @@ namespace UtilsCore
         /// 按字符长度截取字符串
         /// </summary>
         /// <param name="str">字符串</param>
-        /// <param name="charLength">字符长度</param>
+        /// <param name="charLength">要截取的字符长度</param>
         /// <returns></returns>
-        public string Cut(string str, int charLength)
+        public string CutChar(string str, int charLength)
         {
             var bytes = Encoding.Unicode.GetBytes(str);
             var n = 0;  //  表示当前的字节数
@@ -120,13 +120,29 @@ namespace UtilsCore
 
 
         /// <summary>
+        /// 按字长度截取字符串
+        /// </summary>
+        /// <param name="str">字符串</param>
+        /// <param name="strCount">要截取的字数（含）</param>
+        /// <returns></returns>
+        public string CutString(string str, int strCount)
+        {
+            if (string.IsNullOrEmpty(str) || strCount <= 0)
+            {
+                return str;
+            }
+            return str.Length >= strCount ? str.Substring(0, strCount) : str;
+        }
+
+
+        /// <summary>
         /// 字符串分割获取项
         /// </summary>
         /// <param name="str">例如："苹果,香蕉,猕猴桃,凤梨,枇杷,葡萄,柠檬,橘子,火龙果"</param>
         /// <param name="splitChar">,</param>
         /// <param name="returnItemCount">2</param>
         /// <returns>苹果,香蕉</returns>
-        public string Split(string str, char splitChar, int returnItemCount)
+        public string SplitString(string str, char splitChar, int returnItemCount)
         {
             if (string.IsNullOrEmpty(str)) return str;
             if (returnItemCount < 1) returnItemCount = 1;

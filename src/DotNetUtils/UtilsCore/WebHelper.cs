@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Web.Script.Serialization;
 using System.Web;
 
@@ -36,8 +37,9 @@ namespace UtilsCore
         /// <param name="url">请求地址</param>
         /// <param name="data">参数</param>
         /// <param name="tips">提示</param>
+        /// <param name="dateTimeFormat">参数时间格式</param>
         /// <returns></returns>
-        public T DoPost<T>(string url, object data,out string tips)
+        public T DoPost<T>(string url, object data,out string tips,string dateTimeFormat= "yyyy-MM-dd HH:mm:ss")
         {
             try
             {
@@ -47,6 +49,13 @@ namespace UtilsCore
                 request.ContentType = "application/json;charset=UTF-8";
                 var js = new JavaScriptSerializer();
                 var @params = js.Serialize(data);
+                @params = Regex.Replace(@params, @"\\/Date\((\d+)\)\\/", match =>
+                {
+                    var dt = new DateTime(1970, 1, 1);
+                    dt = dt.AddMilliseconds(long.Parse(match.Groups[1].Value));
+                    dt = dt.ToLocalTime();
+                    return dt.ToString(dateTimeFormat);
+                });
                 var reqStreamWriter = new StreamWriter(request.GetRequestStream());
                 reqStreamWriter.Write(@params);
                 reqStreamWriter.Close();

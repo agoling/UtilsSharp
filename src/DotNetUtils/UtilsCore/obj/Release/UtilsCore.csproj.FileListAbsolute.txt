@@ -22,3 +22,4 @@ D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\bin\Release\Dependency.d
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\bin\Release\Dependency.pdb
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Release\UtilsCore.csprojAssemblyReference.cache
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Release\UtilsCore.csproj.CopyComplete
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\bin\Release\Dependency.xml

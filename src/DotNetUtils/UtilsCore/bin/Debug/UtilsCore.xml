@@ -1137,22 +1137,30 @@
             <param name="str">字符串</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.StringHelper.GetLength(System.String)">
+        <member name="M:UtilsCore.StringHelper.GetCharLength(System.String)">
             <summary>
             得到字符串长度
             </summary>
             <param name="str">字符串</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.StringHelper.Cut(System.String,System.Int32)">
+        <member name="M:UtilsCore.StringHelper.CutChar(System.String,System.Int32)">
             <summary>
             按字符长度截取字符串
             </summary>
             <param name="str">字符串</param>
-            <param name="charLength">字符长度</param>
+            <param name="charLength">要截取的字符长度</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.StringHelper.Split(System.String,System.Char,System.Int32)">
+        <member name="M:UtilsCore.StringHelper.CutString(System.String,System.Int32)">
+            <summary>
+            按字长度截取字符串
+            </summary>
+            <param name="str">字符串</param>
+            <param name="strCount">要截取的字数（含）</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.StringHelper.SplitString(System.String,System.Char,System.Int32)">
             <summary>
             字符串分割获取项
             </summary>
@@ -1335,7 +1343,7 @@
             请求与响应的超时时间
             </summary>
         </member>
-        <member name="M:UtilsCore.WebHelper.DoPost``1(System.String,System.Object,System.String@)">
+        <member name="M:UtilsCore.WebHelper.DoPost``1(System.String,System.Object,System.String@,System.String)">
             <summary>
             执行HTTP POST请求
             </summary>
@@ -1343,6 +1351,7 @@
             <param name="url">请求地址</param>
             <param name="data">参数</param>
             <param name="tips">提示</param>
+            <param name="dateTimeFormat">参数时间格式</param>
             <returns></returns>
         </member>
         <member name="M:UtilsCore.WebHelper.DoPost(System.String,System.Text.Encoding)">
