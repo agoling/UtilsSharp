@@ -4,4 +4,3 @@ D:\GitHub\Project\DotNetUtils\src\DotNetUtils\Dependency\obj\Release\Dependency.
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\Dependency\obj\Release\Dependency.dll
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\Dependency\obj\Release\Dependency.pdb
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\Dependency\bin\Release\Dependency.xml
-D:\GitHub\Project\DotNetUtils\src\DotNetUtils\Dependency\obj\Release\Dependency.csprojAssemblyReference.cache

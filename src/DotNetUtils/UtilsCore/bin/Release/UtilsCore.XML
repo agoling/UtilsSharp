@@ -487,6 +487,278 @@
             <param name="secretKey">密文</param>
             <returns></returns>
         </member>
+        <member name="T:UtilsCore.DingTalkRobot">
+            <summary>
+            钉钉自定义机器人
+            </summary>
+        </member>
+        <member name="M:UtilsCore.DingTalkRobot.SendTextMessage(System.String,System.String,System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+             调用自定义机器人发Text类型消息
+            </summary>
+            <param name="webhook">webHook地址</param>
+            <param name="content">消息内容</param>
+            <param name="atMobiles">被@人的手机号</param>
+            <param name="isAtAll">@所有人时:true,否则为:false</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.DingTalkRobot.SendLinkMessage(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            调用自定义机器人发Link类型消息
+            </summary>
+            <param name="webhook">webHook地址</param>
+            <param name="title">消息标题</param>
+            <param name="text">消息内容(注：如果太长只会部分展示)</param>
+            <param name="picUrl">图片url</param>
+            <param name="messageUrl">点击消息跳转的url</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.DingTalkRobot.SendMarkdownMessage(System.String,System.String,UtilsCore.TitleType,System.Collections.Generic.List{UtilsCore.MarkdownMessage},System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            调用自定义机器人发Markdown类型消息
+            </summary>
+            <param name="webhook">webHook地址</param>
+            <param name="title">消息标题</param>
+            <param name="titleType">标题类型等级</param>
+            <param name="markdownMessages">消息内容</param>
+            <param name="atMobiles">被@手机号</param>
+            <param name="isAtAll">@所有人时:true,否则为:false</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.DingTalkRobot.SendActionCardMessage(System.String,System.String,System.Collections.Generic.List{UtilsCore.MarkdownMessage},System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            调用自定义机器人发整体跳转ActionCard类型消息
+            </summary>
+            <param name="webhook">webHook地址</param>
+            <param name="title">消息标题</param>
+            <param name="markdownMessages">消息内容</param>
+            <param name="hideAvatar">0-正常发消息者头像,1-隐藏发消息者头像</param>
+            <param name="btnOrientation">0-按钮竖直排列，1-按钮横向排列</param>
+            <param name="singleTitle">单个按钮的方案。(设置此项和singleUrl后btns无效。)</param>
+            <param name="singleUrl">点击singleTitle按钮触发的URL</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.DingTalkRobot.SendSingleActionCardMessage(System.String,System.String,System.Collections.Generic.List{UtilsCore.MarkdownMessage},System.Int32,System.Int32,System.Collections.Generic.List{UtilsCore.Btn})">
+            <summary>
+            调用自定义机器人发独立跳转ActionCard类型消息
+            </summary>
+            <param name="webhook">webHook地址</param>
+            <param name="title">消息标题</param>
+            <param name="markdownMessages">消息内容</param>
+            <param name="hideAvatar">0-正常发消息者头像,1-隐藏发消息者头像</param>
+            <param name="btnOrientation">0-按钮竖直排列，1-按钮横向排列</param>
+            <param name="btns">按钮集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.DingTalkRobot.SendFeedCardMessage(System.String,System.Collections.Generic.List{UtilsCore.Link})">
+            <summary>
+            调用自定义机器人发FeedCard类型消息
+            </summary>
+            <param name="webhook">webHook地址</param>
+            <param name="links">图片按钮集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.DingTalkRobot.SendMessage(System.String,System.Object)">
+            <summary>
+            调用自定义机器人发消息
+            </summary>
+            <param name="webhook">webHook地址</param>
+            <param name="message">消息信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.DingTalkRobot.RestructureMessage(System.Collections.Generic.List{UtilsCore.MarkdownMessage})">
+            <summary>
+            重构消息内容
+            </summary>
+            <param name="markdownMessages">消息内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.DingTalkRobot.GetAtMobiles(System.Collections.Generic.List{System.String})">
+            <summary>
+            获取被@人的手机号
+            </summary>
+            <param name="atMobiles">被@人的手机号</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.DingTalkRobot.GetContentGrade(UtilsCore.TitleType,System.String)">
+            <summary>
+            获取等级文本
+            </summary>
+            <param name="titleType">文本类型</param>
+            <param name="title">文本</param>
+            <returns></returns>
+        </member>
+        <member name="T:UtilsCore.MarkdownMessage">
+            <summary>
+            Markdown消息内容类
+            </summary>
+        </member>
+        <member name="P:UtilsCore.MarkdownMessage.Index">
+            <summary>
+            内容坐标索引
+            </summary>
+        </member>
+        <member name="P:UtilsCore.MarkdownMessage.MarkdownType">
+            <summary>
+            内容类型(文字、图片、链接)
+            </summary>
+        </member>
+        <member name="P:UtilsCore.MarkdownMessage.Text">
+            <summary>
+            内容（注：文字类型的内容中禁止字符["#"、"*"、"["、"]"、"!"]；
+            图片类型和链接类型的内容传可访问的http地址即可）
+            </summary>
+        </member>
+        <member name="P:UtilsCore.MarkdownMessage.IsLineFeed">
+            <summary>
+            是否换行
+            </summary>
+        </member>
+        <member name="T:UtilsCore.Text">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Text.Content">
+            <summary>
+            文本或链接显示文字
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Text.ImgUrl">
+            <summary>
+            图片链接
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Text.Url">
+            <summary>
+            超链接地址
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Text.ContentType">
+            <summary>
+            文本类型
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Text.ContentGrade">
+            <summary>
+            文本等级
+            </summary>
+        </member>
+        <member name="T:UtilsCore.Btn">
+            <summary>
+            超链接按钮
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Btn.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Btn.ActionUrl">
+            <summary>
+            标题对应的超链接
+            </summary>
+        </member>
+        <member name="T:UtilsCore.Link">
+            <summary>
+            超链接按钮带图片
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Link.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Link.MessageUrl">
+            <summary>
+            超链接
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Link.PicUrl">
+            <summary>
+            图片超链接
+            </summary>
+        </member>
+        <member name="T:UtilsCore.ContentType">
+            <summary>
+            文本类型
+            </summary>
+        </member>
+        <member name="F:UtilsCore.ContentType.默认">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:UtilsCore.ContentType.加粗">
+            <summary>
+            加粗
+            </summary>
+        </member>
+        <member name="F:UtilsCore.ContentType.斜体">
+            <summary>
+            斜体
+            </summary>
+        </member>
+        <member name="T:UtilsCore.MarkdownType">
+            <summary>
+            Markdown消息内容类型
+            </summary>
+        </member>
+        <member name="F:UtilsCore.MarkdownType.文本">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="F:UtilsCore.MarkdownType.图片">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="F:UtilsCore.MarkdownType.链接">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="T:UtilsCore.TitleType">
+            <summary>
+            标题(文本)类型等级
+            </summary>
+        </member>
+        <member name="F:UtilsCore.TitleType.默认">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:UtilsCore.TitleType.一级">
+            <summary>
+            一级
+            </summary>
+        </member>
+        <member name="F:UtilsCore.TitleType.二级">
+            <summary>
+            二级
+            </summary>
+        </member>
+        <member name="F:UtilsCore.TitleType.三级">
+            <summary>
+            三级
+            </summary>
+        </member>
+        <member name="F:UtilsCore.TitleType.四级">
+            <summary>
+            四级
+            </summary>
+        </member>
+        <member name="F:UtilsCore.TitleType.五级">
+            <summary>
+            五级
+            </summary>
+        </member>
+        <member name="F:UtilsCore.TitleType.六级">
+            <summary>
+            六级
+            </summary>
+        </member>
         <member name="T:UtilsCore.DownLoadHelper">
             <summary>
             文件下载帮助类
@@ -1137,22 +1409,30 @@
             <param name="str">字符串</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.StringHelper.GetLength(System.String)">
+        <member name="M:UtilsCore.StringHelper.GetCharLength(System.String)">
             <summary>
             得到字符串长度
             </summary>
             <param name="str">字符串</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.StringHelper.Cut(System.String,System.Int32)">
+        <member name="M:UtilsCore.StringHelper.CutChar(System.String,System.Int32)">
             <summary>
             按字符长度截取字符串
             </summary>
             <param name="str">字符串</param>
-            <param name="charLength">字符长度</param>
+            <param name="charLength">要截取的字符长度</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.StringHelper.Split(System.String,System.Char,System.Int32)">
+        <member name="M:UtilsCore.StringHelper.CutString(System.String,System.Int32)">
+            <summary>
+            按字长度截取字符串
+            </summary>
+            <param name="str">字符串</param>
+            <param name="strCount">要截取的字数（含）</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.StringHelper.SplitString(System.String,System.Char,System.Int32)">
             <summary>
             字符串分割获取项
             </summary>
@@ -1335,7 +1615,7 @@
             请求与响应的超时时间
             </summary>
         </member>
-        <member name="M:UtilsCore.WebHelper.DoPost``1(System.String,System.Object,System.String@)">
+        <member name="M:UtilsCore.WebHelper.DoPost``1(System.String,System.Object,System.String@,System.String)">
             <summary>
             执行HTTP POST请求
             </summary>
@@ -1343,6 +1623,7 @@
             <param name="url">请求地址</param>
             <param name="data">参数</param>
             <param name="tips">提示</param>
+            <param name="dateTimeFormat">参数时间格式</param>
             <returns></returns>
         </member>
         <member name="M:UtilsCore.WebHelper.DoPost(System.String,System.Text.Encoding)">

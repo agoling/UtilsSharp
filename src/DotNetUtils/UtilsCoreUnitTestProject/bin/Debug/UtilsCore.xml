@@ -489,7 +489,7 @@
         </member>
         <member name="T:UtilsCore.DingTalkRobot">
             <summary>
-            钉钉机器人
+            钉钉自定义机器人
             </summary>
         </member>
         <member name="M:UtilsCore.DingTalkRobot.SendTextMessage(System.String,System.String,System.Collections.Generic.List{System.String},System.Boolean)">
@@ -520,7 +520,7 @@
             <param name="webhook">webHook地址</param>
             <param name="title">消息标题</param>
             <param name="titleType">标题类型等级</param>
-            <param name="markdownMessageList">消息内容</param>
+            <param name="markdownMessages">消息内容</param>
             <param name="atMobiles">被@手机号</param>
             <param name="isAtAll">@所有人时:true,否则为:false</param>
             <returns></returns>
@@ -531,10 +531,10 @@
             </summary>
             <param name="webhook">webHook地址</param>
             <param name="title">消息标题</param>
-            <param name="markdownMessageList">消息内容</param>
+            <param name="markdownMessages">消息内容</param>
             <param name="hideAvatar">0-正常发消息者头像,1-隐藏发消息者头像</param>
             <param name="btnOrientation">0-按钮竖直排列，1-按钮横向排列</param>
-            <param name="singleTitle">单个按钮的方案。(设置此项和singleURL后btns无效。)</param>
+            <param name="singleTitle">单个按钮的方案。(设置此项和singleUrl后btns无效。)</param>
             <param name="singleUrl">点击singleTitle按钮触发的URL</param>
             <returns></returns>
         </member>
@@ -544,7 +544,7 @@
             </summary>
             <param name="webhook">webHook地址</param>
             <param name="title">消息标题</param>
-            <param name="markdownMessageList">消息内容</param>
+            <param name="markdownMessages">消息内容</param>
             <param name="hideAvatar">0-正常发消息者头像,1-隐藏发消息者头像</param>
             <param name="btnOrientation">0-按钮竖直排列，1-按钮横向排列</param>
             <param name="btns">按钮集合</param>
@@ -566,11 +566,11 @@
             <param name="message">消息信息</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.DingTalkRobot.GetNewMessage(System.Collections.Generic.List{UtilsCore.MarkdownMessage})">
+        <member name="M:UtilsCore.DingTalkRobot.RestructureMessage(System.Collections.Generic.List{UtilsCore.MarkdownMessage})">
             <summary>
-            获取消息内容
+            重构消息内容
             </summary>
-            <param name="markdownMessageList">消息内容</param>
+            <param name="markdownMessages">消息内容</param>
             <returns></returns>
         </member>
         <member name="M:UtilsCore.DingTalkRobot.GetAtMobiles(System.Collections.Generic.List{System.String})">
@@ -595,7 +595,7 @@
         </member>
         <member name="P:UtilsCore.MarkdownMessage.Index">
             <summary>
-            内容坐标
+            内容坐标索引
             </summary>
         </member>
         <member name="P:UtilsCore.MarkdownMessage.MarkdownType">

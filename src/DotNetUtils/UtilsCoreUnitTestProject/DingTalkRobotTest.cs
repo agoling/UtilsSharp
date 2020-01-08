@@ -189,7 +189,5 @@ namespace UtilsCoreUnitTestProject
             };
             var result = DingTalkRobot.SendFeedCardMessage(webhook, links);
         }
-
-
     }
 }

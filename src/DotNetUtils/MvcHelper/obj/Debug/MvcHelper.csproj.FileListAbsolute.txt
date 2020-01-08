@@ -21,6 +21,12 @@ D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\bin\Debug\System.Web.Raz
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\bin\Debug\System.Web.WebPages.xml
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\bin\Debug\System.Web.WebPages.Deployment.xml
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\bin\Debug\System.Web.WebPages.Razor.xml
-D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\obj\Debug\MvcHelper.csprojResolveAssemblyReference.cache
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\obj\Debug\MvcHelper.dll
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\obj\Debug\MvcHelper.pdb
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\bin\Debug\MvcHelper.xml
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\bin\Debug\Dependency.xml
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\bin\Debug\Newtonsoft.Json.xml
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\obj\Debug\MvcHelper.csprojAssemblyReference.cache
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\obj\Debug\MvcHelper.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\MvcHelper\obj\Debug\MvcHelper.csproj.CopyComplete

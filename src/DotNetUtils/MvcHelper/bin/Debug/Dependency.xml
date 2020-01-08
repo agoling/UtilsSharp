@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dependency</name>
+    </assembly>
+    <members>
+        <member name="T:Dependency.IDependency">
+            <summary>
+            DI依赖接口标识
+            </summary>
+        </member>
+        <member name="T:Dependency.ISingletonDependency">
+            <summary>
+            表示实现者是一个单列依赖。
+            </summary>
+        </member>
+        <member name="T:Dependency.ITransientDependency">
+            <summary>
+            表示实现者是一个瞬态依赖
+            </summary>
+        </member>
+        <member name="T:Dependency.IUnitOfWorkDependency">
+            <summary>
+            表示实现者是一个工作单元依赖
+            </summary>
+        </member>
+    </members>
+</doc>
