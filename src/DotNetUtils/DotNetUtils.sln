@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilsCore", "UtilsCore\UtilsCore.csproj", "{E8892F1A-F0AB-432E-99A9-676EA9508C1A}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcHelper", "MvcHelper\MvcHelper.csproj", "{424F83AD-5D5D-490E-A07C-EE0812D1C06F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiHelper", "WebApiHelper\WebApiHelper.csproj", "{12E4E1A5-4043-456C-AE3A-D1A8F9EF916F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilsCoreUnitTestProject", "UtilsCoreUnitTestProject\UtilsCoreUnitTestProject.csproj", "{81464535-ABC6-4D63-9DF9-32E93A285E9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +35,15 @@ Global
 		{12E4E1A5-4043-456C-AE3A-D1A8F9EF916F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12E4E1A5-4043-456C-AE3A-D1A8F9EF916F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12E4E1A5-4043-456C-AE3A-D1A8F9EF916F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81464535-ABC6-4D63-9DF9-32E93A285E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81464535-ABC6-4D63-9DF9-32E93A285E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81464535-ABC6-4D63-9DF9-32E93A285E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81464535-ABC6-4D63-9DF9-32E93A285E9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C766EDDB-3F88-48B1-8B3C-7BCC72C75481}
 	EndGlobalSection
 EndGlobal

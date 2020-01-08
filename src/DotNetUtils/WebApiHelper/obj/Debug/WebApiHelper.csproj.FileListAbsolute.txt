@@ -17,6 +17,10 @@ D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\bin\Debug\Newtonsoft.
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\bin\Debug\System.Net.Http.Formatting.xml
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\bin\Debug\System.Web.Http.xml
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\bin\Debug\System.Web.Http.WebHost.xml
-D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\obj\Debug\WebApiHelper.csprojResolveAssemblyReference.cache
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\obj\Debug\WebApiHelper.dll
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\obj\Debug\WebApiHelper.pdb
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\bin\Debug\WebApiHelper.xml
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\bin\Debug\Dependency.xml
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\obj\Debug\WebApiHelper.csprojAssemblyReference.cache
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\obj\Debug\WebApiHelper.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\WebApiHelper\obj\Debug\WebApiHelper.csproj.CopyComplete

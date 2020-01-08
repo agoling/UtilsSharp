@@ -49,6 +49,7 @@
     <Compile Include="Abstract\BaseBackgroundWorker.cs" />
     <Compile Include="CnDateHelper.cs" />
     <Compile Include="CryptoHelper.cs" />
+    <Compile Include="DingTalkRobot.cs" />
     <Compile Include="DownLoadHelper.cs" />
     <Compile Include="MapperHelper.cs" />
     <Compile Include="RandomHelper.cs" />
@@ -71,6 +72,7 @@
       <Name>Dependency</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
