@@ -55,3 +55,14 @@ D:\GitHub\Project\DotNetUtils\src\UtilsSharp\UtilsCore\obj\Debug\UtilsCore.cspro
 D:\GitHub\Project\DotNetUtils\src\UtilsSharp\UtilsCore\obj\Debug\UtilsCore.csproj.CopyComplete
 D:\GitHub\Project\DotNetUtils\src\UtilsSharp\UtilsCore\obj\Debug\UtilsCore.dll
 D:\GitHub\Project\DotNetUtils\src\UtilsSharp\UtilsCore\obj\Debug\UtilsCore.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\bin\Debug\UtilsCore.xml
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\bin\Debug\UtilsCore.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\bin\Debug\UtilsCore.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\bin\Debug\Dependency.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\bin\Debug\Dependency.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\bin\Debug\Dependency.xml
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\obj\Debug\UtilsCore.csprojAssemblyReference.cache
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\obj\Debug\UtilsCore.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\obj\Debug\UtilsCore.csproj.CopyComplete
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\obj\Debug\UtilsCore.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\obj\Debug\UtilsCore.pdb

@@ -11,3 +11,10 @@ D:\GitHub\Project\DotNetUtils\src\UtilsSharp\Dependency\obj\Debug\Dependency.csp
 D:\GitHub\Project\DotNetUtils\src\UtilsSharp\Dependency\obj\Debug\Dependency.csproj.CoreCompileInputs.cache
 D:\GitHub\Project\DotNetUtils\src\UtilsSharp\Dependency\obj\Debug\Dependency.dll
 D:\GitHub\Project\DotNetUtils\src\UtilsSharp\Dependency\obj\Debug\Dependency.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Dependency\bin\Debug\Dependency.xml
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Dependency\bin\Debug\Dependency.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Dependency\bin\Debug\Dependency.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Dependency\obj\Debug\Dependency.csprojAssemblyReference.cache
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Dependency\obj\Debug\Dependency.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Dependency\obj\Debug\Dependency.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Dependency\obj\Debug\Dependency.pdb

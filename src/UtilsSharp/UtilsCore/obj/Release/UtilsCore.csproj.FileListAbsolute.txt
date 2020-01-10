@@ -23,3 +23,14 @@ D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\bin\Release\Dependency.p
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Release\UtilsCore.csprojAssemblyReference.cache
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\obj\Release\UtilsCore.csproj.CopyComplete
 D:\GitHub\Project\DotNetUtils\src\DotNetUtils\UtilsCore\bin\Release\Dependency.xml
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\bin\Release\UtilsCore.XML
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\bin\Release\UtilsCore.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\bin\Release\UtilsCore.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\bin\Release\Dependency.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\bin\Release\Dependency.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\bin\Release\Dependency.xml
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\obj\Release\UtilsCore.csprojAssemblyReference.cache
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\obj\Release\UtilsCore.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\obj\Release\UtilsCore.csproj.CopyComplete
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\obj\Release\UtilsCore.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\UtilsCore\obj\Release\UtilsCore.pdb
