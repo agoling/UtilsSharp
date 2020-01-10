@@ -51,6 +51,7 @@
     <Compile Include="CryptoHelper.cs" />
     <Compile Include="DingTalkRobot.cs" />
     <Compile Include="DownLoadHelper.cs" />
+    <Compile Include="Interface\ICacheManager.cs" />
     <Compile Include="MapperHelper.cs" />
     <Compile Include="RandomHelper.cs" />
     <Compile Include="Result\BaseResult.cs" />
