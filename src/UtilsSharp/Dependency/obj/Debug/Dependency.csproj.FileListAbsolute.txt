@@ -1,0 +1,13 @@
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\Dependency\bin\Debug\Dependency.dll
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\Dependency\bin\Debug\Dependency.pdb
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\Dependency\obj\Debug\Dependency.dll
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\Dependency\obj\Debug\Dependency.pdb
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\Dependency\bin\Debug\Dependency.xml
+D:\GitHub\Project\DotNetUtils\src\DotNetUtils\Dependency\obj\Debug\Dependency.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\DotNetUtils\src\UtilsSharp\Dependency\bin\Debug\Dependency.xml
+D:\GitHub\Project\DotNetUtils\src\UtilsSharp\Dependency\bin\Debug\Dependency.dll
+D:\GitHub\Project\DotNetUtils\src\UtilsSharp\Dependency\bin\Debug\Dependency.pdb
+D:\GitHub\Project\DotNetUtils\src\UtilsSharp\Dependency\obj\Debug\Dependency.csprojAssemblyReference.cache
+D:\GitHub\Project\DotNetUtils\src\UtilsSharp\Dependency\obj\Debug\Dependency.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\DotNetUtils\src\UtilsSharp\Dependency\obj\Debug\Dependency.dll
+D:\GitHub\Project\DotNetUtils\src\UtilsSharp\Dependency\obj\Debug\Dependency.pdb
