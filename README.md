@@ -128,31 +128,3 @@ example：pageIndex, pageSize
 6000 | dataExpire | 数据过期 |
 7000 | businessError | 默认业务性异常 |
 
-
-<br />
-
-### 六、编写规范
-
-#### 请求参数 
-
-##### Headers
-
-参数名称 |  类型 | 是否必须 |  示例  |  备注  
--|-|-|-|-
-token | string | 必须 | '6fc7ab0a1a1a42639599233f65c74ccf' | token |
-
-
-##### Body
-
-参数名称 |  类型 | 是否必须 |  示例  |  备注  
--|-|-|-|-
-keyword | string | 必须 | '测试' | 关键词搜索 |
-pageIndex | int | 必须 |1 | 当前页码 |
-pageSize | int | 必须 |10 |分页数量 |
-
-#### 返回参数 
-名称 |  类型 | 是否必须 |  默认值  |  备注  
--|-|-|-|-
-code | int | 必须 | 200 | 返回状态码 |
-msg | string | 必须 |  success | 成功时为"success"，错误时则是错误信息 |
-result | object | 必须 | {}  | 返回的数据 |
