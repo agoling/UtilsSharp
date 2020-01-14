@@ -88,22 +88,22 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="T:UtilsCore.Abstract.BasePaged">
+        <member name="T:UtilsCore.Abstract.BasePage">
             <summary>
-            分页参数基类
+            基础分页参数
             </summary>
         </member>
-        <member name="P:UtilsCore.Abstract.BasePaged.PageIndex">
+        <member name="P:UtilsCore.Abstract.BasePage.PageIndex">
             <summary>
             页码
             </summary>
         </member>
-        <member name="P:UtilsCore.Abstract.BasePaged.PageSize">
+        <member name="P:UtilsCore.Abstract.BasePage.PageSize">
             <summary>
             每页大小
             </summary>
         </member>
-        <member name="P:UtilsCore.Abstract.BasePaged.Keyword">
+        <member name="P:UtilsCore.Abstract.BasePage.Keyword">
             <summary>
             搜索关键字
             </summary>
