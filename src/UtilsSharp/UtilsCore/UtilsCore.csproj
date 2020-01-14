@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\BaseBackgroundWorker.cs" />
-    <Compile Include="Abstract\BasePaged.cs" />
+    <Compile Include="Abstract\BasePage.cs" />
     <Compile Include="CnDateHelper.cs" />
     <Compile Include="CryptoHelper.cs" />
     <Compile Include="DingTalkRobot.cs" />

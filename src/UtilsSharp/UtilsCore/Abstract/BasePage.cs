@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace UtilsCore.Abstract
 {
     /// <summary>
-    /// 分页参数基类
+    /// 基础分页参数
     /// </summary>
-    public class BasePaged
+    public class BasePage
     {
         /// <summary>
         /// 页码
