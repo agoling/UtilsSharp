@@ -105,11 +105,15 @@ example：pageIndex, pageSize
 
 返回码 | 标识 |  说明  
 -|-|-
-200 | success | 请求成功 |
-999 | defaultError | 系统繁忙，此时请开发者稍候再试 |
-3000 | nullData | 未找到数据 |
-4000 | notLogin | 未登录 |
-5000 | exception | 异常 |
-5010 | dataIsValid |  数据验证不通过 |
-6000 | dataExpire | 数据过期 |
-7000 | businessError | 默认业务性异常 |
+200|success|请求成功
+999|defaultTips|业务提示
+3000|networkAnomaly|网络异常
+4000|notLogin|未登录
+4010|authExpire|授权到期
+5000|exception|异常错误
+6000|dataNotFound|数据过期
+6010|dataNotValid|数据验证不通过<
+7000|businessError|默认业务性异常
+8000|apiError|接口异常
+9000|dbError|数据库错误
+9999|SystemError|系统错误
