@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UtilsCore.Result
+namespace UtilsCore.Entity
 {
     /// <summary>
     /// 枚举对象模型

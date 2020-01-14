@@ -47,19 +47,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\BaseBackgroundWorker.cs" />
+    <Compile Include="Abstract\BasePaged.cs" />
     <Compile Include="CnDateHelper.cs" />
     <Compile Include="CryptoHelper.cs" />
     <Compile Include="DingTalkRobot.cs" />
     <Compile Include="DownLoadHelper.cs" />
     <Compile Include="Interface\ICacheManager.cs" />
     <Compile Include="MapperHelper.cs" />
+    <Compile Include="Entity\DingTalkRobotEntity.cs" />
     <Compile Include="RandomHelper.cs" />
     <Compile Include="Result\BaseResult.cs" />
     <Compile Include="FileHelper.cs" />
     <Compile Include="ImageHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interface\IPagedList.cs" />
-    <Compile Include="Result\EnumEntity.cs" />
+    <Compile Include="Entity\EnumEntity.cs" />
     <Compile Include="Result\PagedList.cs" />
     <Compile Include="StringHelper.cs" />
     <Compile Include="TimeHelper.cs" />

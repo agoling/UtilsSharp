@@ -9,6 +9,14 @@ namespace UtilsCore.Result
     /// <summary>
     /// 返回结果模型
     /// </summary>
+    public class BaseResult : BaseResult<string>
+    {
+
+    }
+
+    /// <summary>
+    /// 返回结果模型
+    /// </summary>
     /// <typeparam name="T">自定义结果模型</typeparam>
     public class BaseResult<T>: BaseInfoResult
     {
