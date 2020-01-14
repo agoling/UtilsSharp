@@ -53,15 +53,19 @@ namespace UtilsCore.Result
     public abstract class BaseInfoResult
     {
         /// <summary>
-        /// 返回码	标识	说明
-        ///200	success 请求成功
-        ///999	defaultError 系统繁忙，此时请开发者稍候再试
-        ///3000	nullData 未找到数据
-        ///4000	notLogin 未登录
-        ///5000	exception 异常
-        ///5010	dataIsValid 数据验证不通过
-        ///6000	dataExpire 数据过期
-        ///7000	businessError 默认业务性异常
+        /// 返回码|标识|说明
+        ///<para>200|success|请求成功</para>
+        ///<para>999|defaultTips|业务提示</para>
+        ///<para>2000|apiError|接口异常</para>
+        ///<para>3000|networkError|网络异常</para>
+        ///<para>4000|notLogin|未登录</para>
+        ///<para>4010|authExpire|授权到期</para>
+        ///<para>5000|exception|异常错误</para>
+        ///<para>6000|dataNotFound|数据找不到</para>
+        ///<para>6010|dataNotValid|数据验证不通过</para>
+        ///<para>7000|businessError|默认业务性异常</para>
+        ///<para>8000|dbError|数据库异常</para>
+        ///<para>9000|SystemError|系统错误</para>
         /// </summary>
         public int Code { get; set; } = 200;
 
