@@ -112,7 +112,7 @@ example：pageIndex, pageSize
 4010|authExpire|授权到期
 5000|exception|异常错误
 6000|dataNotFound|数据过期
-6010|dataNotValid|数据验证不通过<
+6010|dataNotValid|数据验证不通过
 7000|businessError|默认业务性异常
 8000|apiError|接口异常
 9000|dbError|数据库错误
