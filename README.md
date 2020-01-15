@@ -1,4 +1,4 @@
-**UtilsSharp工具类库简介**：Nuget可以引入UtilsSharp,该工具类是基于dotnet framework 4.5.2封装的，里面包括：小驼峰法命名出参规范类、出入参规范类、钉钉机器人帮助类、图片帮助类、文件帮助类、下载类、随机数帮助类、对象映射帮助类、字符串帮助类、验证码生成、时间帮助类、中国日历帮助类、任务下发帮助类等，后面将持续更新中…
+**UtilsSharp工具类库简介**：该工具类是基于dotnet framework 4.5.2封装的，里面包括：小驼峰法命名出参规范类、出入参规范类、钉钉机器人帮助类、图片帮助类、文件帮助类、下载类、随机数帮助类、对象映射帮助类、字符串帮助类、验证码生成、时间帮助类、中国日历帮助类、任务下发帮助类等，后面将持续更新中…
 
 例如：UtilsCore.Result目录，该目录下的类为出入参规范类，其使用方法如下："BaseResult"类前后端接口返回参命名规范
  
@@ -6,40 +6,83 @@
 
 #### 1、返回参小驼峰法命名：除第一个单词之外，其他单词首字母大写
 
-①Mvc nuget引入：UtilsSharp.MvcHelper 
-```
-public JsonResult GetInfo(){
-   BaseResult<User> result=new BaseResult<User>();
-  //此方法返回给前端可以转为小驼峰法命名
-  return new JsonFormatResult(result, JsonRequestBehavior.AllowGet);
-}
+1.Mvc nuget引入：UtilsSharp和UtilsSharp.MvcHelper
 
-```
-②webApi nuget引入：UtilsSharp.WebApiHelper
-在Global.asax.cs类的Application_Start方法内
+①Global.asax.cs 注册依赖注入
 
 ```
  public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
         {
+            //依赖注入注册
+            AutofacConfig.Register();
             AreaRegistration.RegisterAllAreas();
-            WebApiConfig.Register(GlobalConfiguration.Configuration);
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            //返回参小驼峰法命名
-            JsonFormatConfig.Register(GlobalConfiguration.Configuration);
         }
     }
 ```
 
+②控制器 调用 new JsonFormatResult()方法
 ```
-public JsonResult GetInfo(){
-   //配置后，方法内自动会转为小驼峰法命名
-   BaseResult<User> result=new BaseResult<User>();
-   return Json(result, JsonRequestBehavior.AllowGet);;
-}
+        /// <summary>
+        /// 获取数据
+        /// </summary>
+        /// <returns></returns>
+        public JsonResult Get(int id)
+        {
+            var result = _userInfoService.Get(id);
+            return new JsonFormatResult(result, JsonRequestBehavior.AllowGet);
+        }
+
 ```
+2.WebApi nuget引入：UtilsSharp和UtilsSharp.WebApiHelper
+
+①Global.asax.cs 注册依赖注入
+```
+public class WebApiApplication : System.Web.HttpApplication
+    {
+        protected void Application_Start()
+        {
+            //依赖注入注册
+            AutofacConfig.Register();
+            GlobalConfiguration.Configure(WebApiConfig.Register);
+        }
+    }
+```
+②WebApiConfig.cs 注册返回参为小驼峰法命名
+
+```
+ public static void Register(HttpConfiguration config)
+        {
+            // Web API 配置和服务
+
+            // Web API 路由
+            config.MapHttpAttributeRoutes();
+            //注册返回参为小驼峰法命名
+            JsonFormatConfig.Register(config);
+
+            config.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
+        }
+```
+③控制器
+
+```
+        /// <summary>
+        /// 获取数据
+        /// </summary>
+        /// <returns></returns>
+        public BaseResult<UserInfo> Get(int id)
+        {
+            var result = _userInfoService.Get(id);
+            return result;
+        }
+```
+具体参考：Demo.MvcProject和Demo.WebApiProject
 
 
 #### 2、方法命名规范
@@ -117,3 +160,4 @@ example：pageIndex, pageSize
 7000|businessError|默认业务性异常
 8000|dbError|数据库异常
 9000|SystemError|系统错误
+
