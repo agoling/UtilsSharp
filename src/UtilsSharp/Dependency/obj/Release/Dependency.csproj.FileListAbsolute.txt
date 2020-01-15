@@ -10,3 +10,4 @@ D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Dependency\bin\Release\Dependency.pd
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Dependency\obj\Release\Dependency.csproj.CoreCompileInputs.cache
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Dependency\obj\Release\Dependency.dll
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Dependency\obj\Release\Dependency.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Dependency\obj\Release\Dependency.csprojAssemblyReference.cache

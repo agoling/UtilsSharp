@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UtilsCore;
+using UtilsCore.Entity;
 
 namespace UtilsCoreUnitTestProject
 {

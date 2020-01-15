@@ -88,6 +88,26 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="T:UtilsCore.Abstract.BasePage">
+            <summary>
+            基础分页参数
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Abstract.BasePage.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Abstract.BasePage.PageSize">
+            <summary>
+            每页大小
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Abstract.BasePage.Keyword">
+            <summary>
+            搜索关键字
+            </summary>
+        </member>
         <member name="T:UtilsCore.CnDateHelper">
             <summary>
             公历农历转换
@@ -513,7 +533,7 @@
             <param name="messageUrl">点击消息跳转的url</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.DingTalkRobot.SendMarkdownMessage(System.String,System.String,UtilsCore.TitleType,System.Collections.Generic.List{UtilsCore.MarkdownMessage},System.Collections.Generic.List{System.String},System.Boolean)">
+        <member name="M:UtilsCore.DingTalkRobot.SendMarkdownMessage(System.String,System.String,UtilsCore.Entity.TitleType,System.Collections.Generic.List{UtilsCore.Entity.MarkdownMessage},System.Collections.Generic.List{System.String},System.Boolean)">
             <summary>
             调用自定义机器人发Markdown类型消息
             </summary>
@@ -525,7 +545,7 @@
             <param name="isAtAll">@所有人时:true,否则为:false</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.DingTalkRobot.SendActionCardMessage(System.String,System.String,System.Collections.Generic.List{UtilsCore.MarkdownMessage},System.Int32,System.Int32,System.String,System.String)">
+        <member name="M:UtilsCore.DingTalkRobot.SendActionCardMessage(System.String,System.String,System.Collections.Generic.List{UtilsCore.Entity.MarkdownMessage},System.Int32,System.Int32,System.String,System.String)">
             <summary>
             调用自定义机器人发整体跳转ActionCard类型消息
             </summary>
@@ -538,7 +558,7 @@
             <param name="singleUrl">点击singleTitle按钮触发的URL</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.DingTalkRobot.SendSingleActionCardMessage(System.String,System.String,System.Collections.Generic.List{UtilsCore.MarkdownMessage},System.Int32,System.Int32,System.Collections.Generic.List{UtilsCore.Btn})">
+        <member name="M:UtilsCore.DingTalkRobot.SendSingleActionCardMessage(System.String,System.String,System.Collections.Generic.List{UtilsCore.Entity.MarkdownMessage},System.Int32,System.Int32,System.Collections.Generic.List{UtilsCore.Entity.Btn})">
             <summary>
             调用自定义机器人发独立跳转ActionCard类型消息
             </summary>
@@ -550,7 +570,7 @@
             <param name="btns">按钮集合</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.DingTalkRobot.SendFeedCardMessage(System.String,System.Collections.Generic.List{UtilsCore.Link})">
+        <member name="M:UtilsCore.DingTalkRobot.SendFeedCardMessage(System.String,System.Collections.Generic.List{UtilsCore.Entity.Link})">
             <summary>
             调用自定义机器人发FeedCard类型消息
             </summary>
@@ -566,7 +586,7 @@
             <param name="message">消息信息</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.DingTalkRobot.RestructureMessage(System.Collections.Generic.List{UtilsCore.MarkdownMessage})">
+        <member name="M:UtilsCore.DingTalkRobot.RestructureMessage(System.Collections.Generic.List{UtilsCore.Entity.MarkdownMessage})">
             <summary>
             重构消息内容
             </summary>
@@ -580,184 +600,13 @@
             <param name="atMobiles">被@人的手机号</param>
             <returns></returns>
         </member>
-        <member name="M:UtilsCore.DingTalkRobot.GetContentGrade(UtilsCore.TitleType,System.String)">
+        <member name="M:UtilsCore.DingTalkRobot.GetContentGrade(UtilsCore.Entity.TitleType,System.String)">
             <summary>
             获取等级文本
             </summary>
             <param name="titleType">文本类型</param>
             <param name="title">文本</param>
             <returns></returns>
-        </member>
-        <member name="T:UtilsCore.MarkdownMessage">
-            <summary>
-            Markdown消息内容类
-            </summary>
-        </member>
-        <member name="P:UtilsCore.MarkdownMessage.Index">
-            <summary>
-            内容坐标索引
-            </summary>
-        </member>
-        <member name="P:UtilsCore.MarkdownMessage.MarkdownType">
-            <summary>
-            内容类型(文字、图片、链接)
-            </summary>
-        </member>
-        <member name="P:UtilsCore.MarkdownMessage.Text">
-            <summary>
-            内容（注：文字类型的内容中禁止字符["#"、"*"、"["、"]"、"!"]；
-            图片类型和链接类型的内容传可访问的http地址即可）
-            </summary>
-        </member>
-        <member name="P:UtilsCore.MarkdownMessage.IsLineFeed">
-            <summary>
-            是否换行
-            </summary>
-        </member>
-        <member name="T:UtilsCore.Text">
-            <summary>
-            内容
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Text.Content">
-            <summary>
-            文本或链接显示文字
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Text.ImgUrl">
-            <summary>
-            图片链接
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Text.Url">
-            <summary>
-            超链接地址
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Text.ContentType">
-            <summary>
-            文本类型
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Text.ContentGrade">
-            <summary>
-            文本等级
-            </summary>
-        </member>
-        <member name="T:UtilsCore.Btn">
-            <summary>
-            超链接按钮
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Btn.Title">
-            <summary>
-            标题
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Btn.ActionUrl">
-            <summary>
-            标题对应的超链接
-            </summary>
-        </member>
-        <member name="T:UtilsCore.Link">
-            <summary>
-            超链接按钮带图片
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Link.Title">
-            <summary>
-            标题
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Link.MessageUrl">
-            <summary>
-            超链接
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Link.PicUrl">
-            <summary>
-            图片超链接
-            </summary>
-        </member>
-        <member name="T:UtilsCore.ContentType">
-            <summary>
-            文本类型
-            </summary>
-        </member>
-        <member name="F:UtilsCore.ContentType.默认">
-            <summary>
-            默认
-            </summary>
-        </member>
-        <member name="F:UtilsCore.ContentType.加粗">
-            <summary>
-            加粗
-            </summary>
-        </member>
-        <member name="F:UtilsCore.ContentType.斜体">
-            <summary>
-            斜体
-            </summary>
-        </member>
-        <member name="T:UtilsCore.MarkdownType">
-            <summary>
-            Markdown消息内容类型
-            </summary>
-        </member>
-        <member name="F:UtilsCore.MarkdownType.文本">
-            <summary>
-            文本
-            </summary>
-        </member>
-        <member name="F:UtilsCore.MarkdownType.图片">
-            <summary>
-            图片
-            </summary>
-        </member>
-        <member name="F:UtilsCore.MarkdownType.链接">
-            <summary>
-            链接
-            </summary>
-        </member>
-        <member name="T:UtilsCore.TitleType">
-            <summary>
-            标题(文本)类型等级
-            </summary>
-        </member>
-        <member name="F:UtilsCore.TitleType.默认">
-            <summary>
-            默认
-            </summary>
-        </member>
-        <member name="F:UtilsCore.TitleType.一级">
-            <summary>
-            一级
-            </summary>
-        </member>
-        <member name="F:UtilsCore.TitleType.二级">
-            <summary>
-            二级
-            </summary>
-        </member>
-        <member name="F:UtilsCore.TitleType.三级">
-            <summary>
-            三级
-            </summary>
-        </member>
-        <member name="F:UtilsCore.TitleType.四级">
-            <summary>
-            四级
-            </summary>
-        </member>
-        <member name="F:UtilsCore.TitleType.五级">
-            <summary>
-            五级
-            </summary>
-        </member>
-        <member name="F:UtilsCore.TitleType.六级">
-            <summary>
-            六级
-            </summary>
         </member>
         <member name="T:UtilsCore.DownLoadHelper">
             <summary>
@@ -916,6 +765,197 @@
             <param name="targetType"></param>
             <returns></returns>
         </member>
+        <member name="T:UtilsCore.Entity.MarkdownMessage">
+            <summary>
+            Markdown消息内容类
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.MarkdownMessage.Index">
+            <summary>
+            内容坐标索引
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.MarkdownMessage.MarkdownType">
+            <summary>
+            内容类型(文字、图片、链接)
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.MarkdownMessage.Text">
+            <summary>
+            内容（注：文字类型的内容中禁止字符["#"、"*"、"["、"]"、"!"]；
+            图片类型和链接类型的内容传可访问的http地址即可）
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.MarkdownMessage.IsLineFeed">
+            <summary>
+            是否换行
+            </summary>
+        </member>
+        <member name="T:UtilsCore.Entity.Text">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.Text.Content">
+            <summary>
+            文本或链接显示文字
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.Text.ImgUrl">
+            <summary>
+            图片链接
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.Text.Url">
+            <summary>
+            超链接地址
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.Text.ContentType">
+            <summary>
+            文本类型
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.Text.ContentGrade">
+            <summary>
+            文本等级
+            </summary>
+        </member>
+        <member name="T:UtilsCore.Entity.Btn">
+            <summary>
+            超链接按钮
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.Btn.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.Btn.ActionUrl">
+            <summary>
+            标题对应的超链接
+            </summary>
+        </member>
+        <member name="T:UtilsCore.Entity.Link">
+            <summary>
+            超链接按钮带图片
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.Link.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.Link.MessageUrl">
+            <summary>
+            超链接
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.Link.PicUrl">
+            <summary>
+            图片超链接
+            </summary>
+        </member>
+        <member name="T:UtilsCore.Entity.ContentType">
+            <summary>
+            文本类型
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.ContentType.默认">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.ContentType.加粗">
+            <summary>
+            加粗
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.ContentType.斜体">
+            <summary>
+            斜体
+            </summary>
+        </member>
+        <member name="T:UtilsCore.Entity.MarkdownType">
+            <summary>
+            Markdown消息内容类型
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.MarkdownType.文本">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.MarkdownType.图片">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.MarkdownType.链接">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="T:UtilsCore.Entity.TitleType">
+            <summary>
+            标题(文本)类型等级
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.TitleType.默认">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.TitleType.一级">
+            <summary>
+            一级
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.TitleType.二级">
+            <summary>
+            二级
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.TitleType.三级">
+            <summary>
+            三级
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.TitleType.四级">
+            <summary>
+            四级
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.TitleType.五级">
+            <summary>
+            五级
+            </summary>
+        </member>
+        <member name="F:UtilsCore.Entity.TitleType.六级">
+            <summary>
+            六级
+            </summary>
+        </member>
+        <member name="T:UtilsCore.Entity.EnumEntity">
+            <summary>
+            枚举对象模型
+            </summary>
+        </member>
+        <member name="P:UtilsCore.Entity.EnumEntity.EnumName">
+            <summary>  
+            枚举名称  
+            </summary>  
+        </member>
+        <member name="P:UtilsCore.Entity.EnumEntity.EnumValue">
+            <summary>  
+            枚举对象的值  
+            </summary>  
+        </member>
+        <member name="P:UtilsCore.Entity.EnumEntity.Description">
+            <summary>  
+            枚举的描述  
+            </summary>  
+        </member>
         <member name="T:UtilsCore.RandomHelper">
             <summary>
             随机数帮助类
@@ -984,6 +1024,11 @@
             <param name="time2">结束日期</param>
             <returns>间隔日期之间的 随机日期</returns>
         </member>
+        <member name="T:UtilsCore.Result.BaseResult">
+            <summary>
+            返回结果模型
+            </summary>
+        </member>
         <member name="T:UtilsCore.Result.BaseResult`1">
             <summary>
             返回结果模型
@@ -1019,15 +1064,19 @@
         </member>
         <member name="P:UtilsCore.Result.BaseInfoResult.Code">
              <summary>
-             返回码	标识	说明
-            200	success 请求成功
-            999	defaultError 系统繁忙，此时请开发者稍候再试
-            3000	nullData 未找到数据
-            4000	notLogin 未登录
-            5000	exception 异常
-            5010	dataIsValid 数据验证不通过
-            6000	dataExpire 数据过期
-            7000	businessError 默认业务性异常
+             返回码|标识|说明
+            <para>200|success|请求成功</para>
+            999|defaultTips|业务提示
+            <para>2000|apiError|接口异常</para>
+            3000|networkError|网络异常
+            <para>4000|notLogin|未登录</para>
+            4010|authExpire|授权到期
+            <para>5000|exception|异常错误</para>
+            6000|dataNotFound|数据找不到
+            <para>6010|dataNotValid|数据验证不通过</para>
+            7000|businessError|默认业务性异常
+            <para>8000|dbError|数据库异常</para>
+            9000|SystemError|系统错误
              </summary>
         </member>
         <member name="P:UtilsCore.Result.BaseInfoResult.Msg">
@@ -1042,11 +1091,25 @@
             <param name="result">基础结果信息</param>
         </member>
         <member name="M:UtilsCore.Result.BaseInfoResult.SetError(System.String,System.Int32)">
-            <summary>
-            设置错误提示
-            </summary>
-            <param name="msg">提示信息</param>
-            <param name="code">错误码</param>
+             <summary>
+             设置错误提示
+             </summary>
+             <param name="msg">提示信息</param>
+             <param name="code">
+             返回码|标识|说明
+            <para>200|success|请求成功</para>
+            999|defaultTips|业务提示
+            <para>2000|apiError|接口异常</para>
+            3000|networkError|网络异常
+            <para>4000|notLogin|未登录</para>
+            4010|authExpire|授权到期
+            <para>5000|exception|异常错误</para>
+            6000|dataNotFound|数据找不到
+            <para>6010|dataNotValid|数据验证不通过</para>
+            7000|businessError|默认业务性异常
+            <para>8000|dbError|数据库异常</para>
+            9000|SystemError|系统错误
+             </param>
         </member>
         <member name="M:UtilsCore.Result.BaseInfoResult.SetError(System.String)">
             <summary>
@@ -1104,26 +1167,6 @@
             <summary>
             参数信息
             </summary>
-        </member>
-        <member name="T:UtilsCore.Result.EnumEntity">
-            <summary>
-            枚举对象模型
-            </summary>
-        </member>
-        <member name="P:UtilsCore.Result.EnumEntity.EnumName">
-            <summary>  
-            枚举名称  
-            </summary>  
-        </member>
-        <member name="P:UtilsCore.Result.EnumEntity.EnumValue">
-            <summary>  
-            枚举对象的值  
-            </summary>  
-        </member>
-        <member name="P:UtilsCore.Result.EnumEntity.Description">
-            <summary>  
-            枚举的描述  
-            </summary>  
         </member>
         <member name="T:UtilsCore.Result.PagedList`1">
             <summary>

@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApiHelper</name>
+    </assembly>
+    <members>
+        <member name="T:WebApiHelper.AutofacConfig">
+            <summary>
+            Autofac配置
+            </summary>
+        </member>
+        <member name="P:WebApiHelper.AutofacConfig.Container">
+            <summary>
+            IOC容器
+            </summary>
+        </member>
+        <member name="M:WebApiHelper.AutofacConfig.Register">
+            <summary>
+            负责调用autofac框架实现业务逻辑层和数据仓储层程序集中的类型对象的创建
+            负责创建MVC控制器类的对象(调用控制器中的有参构造函数)
+            </summary>
+        </member>
+        <member name="T:WebApiHelper.JsonFormatConfig">
+            <summary>
+            格式化JsonResult（日期,命名方式）
+            </summary>
+        </member>
+        <member name="M:WebApiHelper.JsonFormatConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            格式化JsonResult（日期,命名方式）配置
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:WebApiHelper.JsonFormatConfig.Register(System.Web.Http.HttpConfiguration,System.String)">
+            <summary>
+            格式化JsonResult（日期,命名方式）配置
+            </summary>
+            <param name="config"></param>
+            <param name="dateTimeFormat"></param>
+        </member>
+        <member name="M:WebApiHelper.JsonFormatConfig.Register(System.Web.Http.HttpConfiguration,WebApiHelper.NamingType,System.String,Newtonsoft.Json.Formatting)">
+            <summary>
+            格式化JsonResult（日期,命名方式）配置
+            </summary>
+            <param name="config"></param>
+            <param name="namingType"></param>
+            <param name="dateTimeFormat"></param>
+            <param name="formatting"></param>
+        </member>
+        <member name="T:WebApiHelper.JsonContentNegotiator">
+            <summary>
+            格式化JsonResult（日期,命名方式）
+            </summary>
+        </member>
+        <member name="P:WebApiHelper.JsonContentNegotiator.NamingType">
+            <summary>
+            命名方式
+            </summary>
+        </member>
+        <member name="P:WebApiHelper.JsonContentNegotiator.DateTimeFormat">
+            <summary>
+            日期格式
+            </summary>
+        </member>
+        <member name="P:WebApiHelper.JsonContentNegotiator.Formatting">
+            <summary>
+            是否缩进
+            </summary>
+        </member>
+        <member name="M:WebApiHelper.JsonContentNegotiator.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WebApiHelper.JsonContentNegotiator.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="dateTimeFormat">日期格式</param>
+        </member>
+        <member name="M:WebApiHelper.JsonContentNegotiator.#ctor(WebApiHelper.NamingType,System.String,Newtonsoft.Json.Formatting)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="namingType">命名方式</param>
+            <param name="dateTimeFormat">日期格式</param>
+            <param name="formatting">是否缩进</param>
+        </member>
+        <member name="M:WebApiHelper.JsonContentNegotiator.Negotiate(System.Type,System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{System.Net.Http.Formatting.MediaTypeFormatter})">
+            <summary>
+            通过从可以序列化给定类型对象的给定请求的传入格式化程序中选择最合适的格式来执行内容协商
+            </summary>
+            <param name="type">要序列化的类型</param>
+            <param name="request">request message，其中包含用于执行协商的头值</param>
+            <param name="formatters">objects from which to choose</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApiHelper.NamingType">
+            <summary>
+            命名方式
+            </summary>
+        </member>
+        <member name="F:WebApiHelper.NamingType.Default">
+            <summary>
+            默认命名
+            </summary>
+        </member>
+        <member name="F:WebApiHelper.NamingType.CamelCase">
+            <summary>
+            驼峰命名
+            </summary>
+        </member>
+    </members>
+</doc>

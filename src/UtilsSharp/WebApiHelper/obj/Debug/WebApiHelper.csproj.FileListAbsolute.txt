@@ -76,3 +76,6 @@ D:\GitHub\Project\UtilsSharp\src\UtilsSharp\WebApiHelper\obj\Debug\WebApiHelper.
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\WebApiHelper\obj\Debug\WebApiHelper.csproj.CopyComplete
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\WebApiHelper\obj\Debug\WebApiHelper.dll
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\WebApiHelper\obj\Debug\WebApiHelper.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\WebApiHelper\bin\Debug\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\WebApiHelper\bin\Debug\zh-Hans\System.Web.Http.resources.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\WebApiHelper\bin\Debug\zh-Hans\System.Web.Http.WebHost.resources.dll

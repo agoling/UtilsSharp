@@ -1,0 +1,15 @@
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\Demo.ProjectService.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\Demo.ProjectService.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\Dependency.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\Newtonsoft.Json.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\UtilsCore.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\Dependency.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\Dependency.xml
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\Newtonsoft.Json.xml
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\UtilsCore.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\UtilsCore.xml
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Release\Demo.ProjectService.csprojAssemblyReference.cache
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Release\Demo.ProjectService.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Release\Demo.ProjectService.csproj.CopyComplete
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Release\Demo.ProjectService.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Release\Demo.ProjectService.pdb

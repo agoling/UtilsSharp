@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MvcHelper</name>
+    </assembly>
+    <members>
+        <member name="T:MvcHelper.AutofacConfig">
+            <summary>
+            Autofac配置
+            </summary>
+        </member>
+        <member name="P:MvcHelper.AutofacConfig.Container">
+            <summary>
+            IOC容器
+            </summary>
+        </member>
+        <member name="M:MvcHelper.AutofacConfig.Register">
+            <summary>
+            负责调用autofac框架实现业务逻辑层和数据仓储层程序集中的类型对象的创建
+            负责创建MVC控制器类的对象(调用控制器中的有参构造函数)
+            </summary>
+        </member>
+        <member name="T:MvcHelper.JsonFormatResult">
+            <summary>
+            格式化JsonResult（日期,命名方式）
+            </summary>
+        </member>
+        <member name="P:MvcHelper.JsonFormatResult.NamingType">
+            <summary>
+            命名方式
+            </summary>
+        </member>
+        <member name="P:MvcHelper.JsonFormatResult.DateTimeFormat">
+            <summary>
+            日期格式
+            </summary>
+        </member>
+        <member name="P:MvcHelper.JsonFormatResult.Formatting">
+            <summary>
+            是否缩进
+            </summary>
+        </member>
+        <member name="M:MvcHelper.JsonFormatResult.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:MvcHelper.JsonFormatResult.#ctor(System.Object,System.Web.Mvc.JsonRequestBehavior)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="data">数据</param>
+            <param name="behavior">请求方式</param>
+        </member>
+        <member name="M:MvcHelper.JsonFormatResult.#ctor(System.Object,System.String,System.Web.Mvc.JsonRequestBehavior)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="data">数据</param>
+            <param name="dateTimeFormat">日期格式</param>
+            <param name="behavior">请求方式</param>
+        </member>
+        <member name="M:MvcHelper.JsonFormatResult.#ctor(System.Object,MvcHelper.NamingType,System.String,Newtonsoft.Json.Formatting,System.Web.Mvc.JsonRequestBehavior)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="data">数据</param>
+            <param name="namingType">命名方式</param>
+            <param name="dateTimeFormat">日期格式</param>
+            <param name="formatting">是否缩进</param>
+            <param name="behavior">请求方式</param>
+        </member>
+        <member name="M:MvcHelper.JsonFormatResult.ExecuteResult(System.Web.Mvc.ControllerContext)">
+            <summary>
+            执行结果
+            </summary>
+            <param name="context">上下文</param>
+        </member>
+        <member name="T:MvcHelper.NamingType">
+            <summary>
+            命名方式
+            </summary>
+        </member>
+        <member name="F:MvcHelper.NamingType.Default">
+            <summary>
+            默认命名
+            </summary>
+        </member>
+        <member name="F:MvcHelper.NamingType.CamelCase">
+            <summary>
+            驼峰命名
+            </summary>
+        </member>
+    </members>
+</doc>

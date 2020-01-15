@@ -1,0 +1,15 @@
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Debug\Demo.ProjectService.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Debug\Demo.ProjectService.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Debug\Dependency.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Debug\UtilsCore.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Debug\Dependency.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Debug\Dependency.xml
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Debug\Newtonsoft.Json.xml
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Debug\UtilsCore.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Debug\UtilsCore.xml
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Debug\Demo.ProjectService.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Debug\Demo.ProjectService.csproj.CopyComplete
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Debug\Demo.ProjectService.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Debug\Demo.ProjectService.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Debug\Demo.ProjectService.csprojAssemblyReference.cache
