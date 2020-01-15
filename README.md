@@ -6,7 +6,7 @@
 
 #### 1、返回参小驼峰法命名：除第一个单词之外，其他单词首字母大写
 
-①Mvc 引入：MvcHelper 
+①Mvc nuget引入：UtilsSharp.MvcHelper 
 ```
 public JsonResult GetInfo(){
    BaseResult<User> result=new BaseResult<User>();
@@ -15,7 +15,7 @@ public JsonResult GetInfo(){
 }
 
 ```
-②webApi 引入：WebApiHelper
+②webApi nuget引入：UtilsSharp.WebApiHelper
 在Global.asax.cs类的Application_Start方法内
 
 ```
