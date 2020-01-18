@@ -82,3 +82,6 @@ D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.WebApiProject\obj\Release\Demo.
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.WebApiProject\obj\Release\Demo.WebApiProject.csproj.CopyComplete
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.WebApiProject\obj\Release\Demo.WebApiProject.dll
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.WebApiProject\obj\Release\Demo.WebApiProject.pdb
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.WebApiProject\bin\Microsoft.Web.Infrastructure.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.WebApiProject\bin\Swashbuckle.Core.dll
+D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.WebApiProject\bin\WebActivatorEx.dll

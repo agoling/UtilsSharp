@@ -112,6 +112,8 @@ namespace WebApiHelper
         {
             var jsonFormatter = new JsonMediaTypeFormatter();
             JsonSerializerSettings setting = jsonFormatter.SerializerSettings;
+            //不理Null值
+            setting.NullValueHandling = NullValueHandling.Ignore;
             //格式化命名方式
             setting.ContractResolver = NamingType == NamingType.CamelCase ? new CamelCasePropertyNamesContractResolver() : new DefaultContractResolver();
             //是否缩进

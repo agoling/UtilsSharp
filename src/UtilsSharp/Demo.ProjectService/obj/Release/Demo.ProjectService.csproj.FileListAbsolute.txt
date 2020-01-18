@@ -8,7 +8,6 @@ D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\Depe
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\Newtonsoft.Json.xml
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\UtilsCore.pdb
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\bin\Release\UtilsCore.xml
-D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Release\Demo.ProjectService.csprojAssemblyReference.cache
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Release\Demo.ProjectService.csproj.CoreCompileInputs.cache
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Release\Demo.ProjectService.csproj.CopyComplete
 D:\GitHub\Project\UtilsSharp\src\UtilsSharp\Demo.ProjectService\obj\Release\Demo.ProjectService.dll
