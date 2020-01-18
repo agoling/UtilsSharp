@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
-//using WebApiHelper;
+using WebApiHelper;
 
 namespace Demo.WebApiProject
 {
@@ -15,8 +15,11 @@ namespace Demo.WebApiProject
             // Web API 路由
             config.MapHttpAttributeRoutes();
             //注册返回参为小驼峰法命名
-            //JsonFormatConfig.Register(config);
-
+#if DEBUG
+            JsonFormatConfig.Register(config, NamingType.Default);
+#else
+            JsonFormatConfig.Register(config);
+#endif
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

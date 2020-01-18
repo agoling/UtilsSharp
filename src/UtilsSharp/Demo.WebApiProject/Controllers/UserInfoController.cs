@@ -45,6 +45,7 @@ namespace Demo.WebApiProject.Controllers
         /// <summary>
         /// 获取数据
         /// </summary>
+        /// <param name="id">Id</param>
         /// <returns></returns>
         public BaseResult<UserInfo> Get(int id)
         {
