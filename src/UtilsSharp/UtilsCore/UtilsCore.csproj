@@ -49,6 +49,7 @@
     <Compile Include="Abstract\BaseBackgroundWorker.cs" />
     <Compile Include="Abstract\BasePage.cs" />
     <Compile Include="CnDateHelper.cs" />
+    <Compile Include="NumberHelper.cs" />
     <Compile Include="CryptoHelper.cs" />
     <Compile Include="DingTalkRobot.cs" />
     <Compile Include="DownLoadHelper.cs" />

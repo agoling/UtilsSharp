@@ -157,6 +157,21 @@ namespace UtilsCore
         }
 
         /// <summary>
+        /// 反转字符串
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public string Reverse(string str)
+        {
+            if (string.IsNullOrEmpty(str)) return str;
+            var array = str.ToCharArray();
+            var cs = array.Reverse<char>();
+            var array1 = cs.ToArray<char>();
+            var result = new string(array1);
+            return result;
+        }
+
+        /// <summary>
         /// 压缩字符串
         /// </summary>
         /// <param name="str">字符串</param>

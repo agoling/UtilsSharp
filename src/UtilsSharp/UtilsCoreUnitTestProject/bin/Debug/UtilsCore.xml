@@ -479,6 +479,26 @@
             取当前日期的干支表示法如 甲子年乙丑月丙庚日
             </summary>
         </member>
+        <member name="T:UtilsCore.NumberHelper">
+            <summary>
+            中文数字帮助类
+            </summary>
+        </member>
+        <member name="M:UtilsCore.NumberHelper.ToCnNumber(System.Int32,System.Boolean)">
+            <summary>
+            阿拉伯数字转中文数字
+            </summary>
+            <param name="num">数字(仅支持0~10)</param>
+            <param name="capitalization">是否返回大写中文数字</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.NumberHelper.ToCnMoney(System.Double)">
+            <summary>
+            金额转中文大写整数支持到万亿,小数部分支持到分(超过两位将进行Banker舍入法处理)
+            </summary>
+            <param name="num">需要转换的双精度浮点数</param>
+            <returns></returns>
+        </member>
         <member name="T:UtilsCore.CryptoHelper">
             <summary>
             加密解密
@@ -1534,6 +1554,13 @@
             <param name="splitChar">,</param>
             <param name="returnItemCount">2</param>
             <returns>苹果,香蕉</returns>
+        </member>
+        <member name="M:UtilsCore.StringHelper.Reverse(System.String)">
+            <summary>
+            反转字符串
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
         </member>
         <member name="M:UtilsCore.StringHelper.Compress(System.String)">
             <summary>
