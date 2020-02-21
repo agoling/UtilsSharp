@@ -108,124 +108,124 @@
             搜索关键字
             </summary>
         </member>
-        <member name="T:UtilsCore.CnDateHelper">
+        <member name="T:UtilsCore.ChinaDateHelper">
             <summary>
             公历农历转换
             </summary>
         </member>
-        <member name="M:UtilsCore.CnDateHelper.lYearDays(System.Int32)">
+        <member name="M:UtilsCore.ChinaDateHelper.LYearDays(System.Int32)">
             <summary>
             传回农历y年的总天数
             </summary>
         </member>
-        <member name="M:UtilsCore.CnDateHelper.leapDays(System.Int32)">
+        <member name="M:UtilsCore.ChinaDateHelper.LeapDays(System.Int32)">
             <summary>
             传回农历y年闰月的天数
             </summary>
         </member>
-        <member name="M:UtilsCore.CnDateHelper.leapMonth(System.Int32)">
+        <member name="M:UtilsCore.ChinaDateHelper.LeapMonth(System.Int32)">
             <summary>
             传回农历y年闰哪个月 1-12 , 没闰传回 0
             </summary>
         </member>
-        <member name="M:UtilsCore.CnDateHelper.monthDays(System.Int32,System.Int32)">
+        <member name="M:UtilsCore.ChinaDateHelper.MonthDays(System.Int32,System.Int32)">
             <summary>
             传回农历y年m月的总天数
             </summary>
         </member>
-        <member name="M:UtilsCore.CnDateHelper.AnimalsYear(System.Int32)">
+        <member name="M:UtilsCore.ChinaDateHelper.AnimalsYear(System.Int32)">
             <summary>
             传回农历y年的生肖
             </summary>
         </member>
-        <member name="M:UtilsCore.CnDateHelper.cyclicalm(System.Int32)">
+        <member name="M:UtilsCore.ChinaDateHelper.Cyclicalm(System.Int32)">
             <summary>
             传入月日的offset 传回干支,0=甲子
             </summary>
         </member>
-        <member name="M:UtilsCore.CnDateHelper.cyclical(System.Int32)">
+        <member name="M:UtilsCore.ChinaDateHelper.Cyclical(System.Int32)">
             <summary>
             传入offset 传回干支, 0=甲子
             </summary>
         </member>
-        <member name="M:UtilsCore.CnDateHelper.Lunar(System.Int32,System.Int32)">
+        <member name="M:UtilsCore.ChinaDateHelper.Lunar(System.Int32,System.Int32)">
             <summary>
             传出农历.year0 .month1 .day2 .yearCyl3 .monCyl4 .dayCyl5 .isLeap6
             </summary>
         </member>
-        <member name="M:UtilsCore.CnDateHelper.calElement(System.Int32,System.Int32,System.Int32)">
+        <member name="M:UtilsCore.ChinaDateHelper.CalElement(System.Int32,System.Int32,System.Int32)">
             <summary>
             传出y年m月d日对应的农历.year0 .month1 .day2 .yearCyl3 .monCyl4 .dayCyl5 .isLeap6
             </summary>
         </member>
-        <member name="M:UtilsCore.CnDateHelper.GetDaysByMonth(System.Int32,System.Int32)">
+        <member name="M:UtilsCore.ChinaDateHelper.GetDaysByMonth(System.Int32,System.Int32)">
             <summary>
             传回公历y年m月的总天数
             </summary>
         </member>
-        <member name="M:UtilsCore.CnDateHelper.GetMondayDateByDate(System.DateTime)">
+        <member name="M:UtilsCore.ChinaDateHelper.GetMondayDateByDate(System.DateTime)">
             <summary>
             根据日期值获得周一的日期
             </summary>
             <param name="dt">输入日期</param>
             <returns>周一的日期</returns>
         </member>
-        <member name="M:UtilsCore.CnDateHelper.GetChinaDate(System.DateTime)">
+        <member name="M:UtilsCore.ChinaDateHelper.GetChinaDate(System.DateTime)">
             <summary>
             获取农历
             </summary>
         </member>
-        <member name="T:UtilsCore.CnDate">
+        <member name="T:UtilsCore.ChinaDate">
             <summary>
             农历属性
             </summary>
         </member>
-        <member name="F:UtilsCore.CnDate.CnIntYear">
+        <member name="F:UtilsCore.ChinaDate.CnIntYear">
             <summary>
             农历年(整型)
             </summary>
         </member>
-        <member name="F:UtilsCore.CnDate.CnIntMonth">
+        <member name="F:UtilsCore.ChinaDate.CnIntMonth">
             <summary>
             农历月份(整型)
             </summary>
         </member>
-        <member name="F:UtilsCore.CnDate.CnIntDay">
+        <member name="F:UtilsCore.ChinaDate.CnIntDay">
             <summary>
             农历天(整型)
             </summary>
         </member>
-        <member name="F:UtilsCore.CnDate.CnStrYear">
+        <member name="F:UtilsCore.ChinaDate.CnStrYear">
             <summary>
             农历年(支干)
             </summary>
         </member>
-        <member name="F:UtilsCore.CnDate.CnStrMonth">
+        <member name="F:UtilsCore.ChinaDate.CnStrMonth">
             <summary>
             农历月份(字符)
             </summary>
         </member>
-        <member name="F:UtilsCore.CnDate.CnStrDay">
+        <member name="F:UtilsCore.ChinaDate.CnStrDay">
             <summary>
             农历天(字符)
             </summary>
         </member>
-        <member name="F:UtilsCore.CnDate.CnAnm">
+        <member name="F:UtilsCore.ChinaDate.CnAnm">
             <summary>
             农历属象
             </summary>
         </member>
-        <member name="F:UtilsCore.CnDate.CnSolarTerm">
+        <member name="F:UtilsCore.ChinaDate.CnSolarTerm">
             <summary>
             二十四节气
             </summary>
         </member>
-        <member name="F:UtilsCore.CnDate.LunarFtv">
+        <member name="F:UtilsCore.ChinaDate.LunarFtv">
             <summary>
             阴历节日
             </summary>
         </member>
-        <member name="F:UtilsCore.CnDate.SolarFtv">
+        <member name="F:UtilsCore.ChinaDate.SolarFtv">
             <summary>
             阳历节日
             </summary>
@@ -1618,6 +1618,20 @@
             <param name="time1">起始日期</param>
             <param name="time2">结束日期</param>
             <returns>日期间隔TimeSpan。</returns>
+        </member>
+        <member name="M:UtilsCore.TimeHelper.ChinaDayOfWeek(System.DateTime)">
+            <summary>
+            中文版指定一周的某天
+            </summary>
+            <param name="dateTime">时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:UtilsCore.TimeHelper.ChinaDayOfWeek(System.DayOfWeek)">
+            <summary>
+            中文版指定一周的某天
+            </summary>
+            <param name="dayOfWeek">指定一周的某天</param>
+            <returns></returns>
         </member>
         <member name="T:UtilsCore.UtilsHelper">
             <summary>

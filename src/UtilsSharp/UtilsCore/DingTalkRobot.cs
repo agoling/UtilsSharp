@@ -269,7 +269,8 @@ namespace UtilsCore
             try
             {
                 var webHelper=new WebHelper();
-                result.Result=webHelper.DoPost<object>(webhook, message, out var tips);
+                string tips;
+                result.Result=webHelper.DoPost<object>(webhook, message, out tips);
                 result.Msg = tips;
                 if (tips == "请求成功") return result;
                 result.SetError(tips);

@@ -112,5 +112,44 @@ namespace UtilsCore
             return ts;
         }
 
+        /// <summary>
+        /// 中文版指定一周的某天
+        /// </summary>
+        /// <param name="dateTime">时间</param>
+        /// <returns></returns>
+        public static string ChinaDayOfWeek(DateTime dateTime)
+        {
+            var dayOfWeek = dateTime.DayOfWeek;
+            return ChinaDayOfWeek(dayOfWeek);
+        }
+
+        /// <summary>
+        /// 中文版指定一周的某天
+        /// </summary>
+        /// <param name="dayOfWeek">指定一周的某天</param>
+        /// <returns></returns>
+        public static string ChinaDayOfWeek(DayOfWeek dayOfWeek)
+        {
+            switch (dayOfWeek)
+            {
+                case DayOfWeek.Monday:
+                    return "星期一";
+                case DayOfWeek.Tuesday:
+                    return "星期二";
+                case DayOfWeek.Wednesday:
+                    return "星期三";
+                case DayOfWeek.Thursday:
+                    return "星期四";
+                case DayOfWeek.Friday:
+                    return "星期五";
+                case DayOfWeek.Saturday:
+                    return "星期六";
+                case DayOfWeek.Sunday:
+                    return "星期日";
+                default:
+                    throw new Exception("参数有误");
+            }
+        }
+
     }
 }
