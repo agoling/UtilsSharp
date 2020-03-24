@@ -1,3 +1,4 @@
+**注意**：该版本工具类停止更新，后续请使用.net standard 版本 https://github.com/agoling/UtilsSharp.Standard
 **UtilsSharp工具类库简介**：该工具类是基于dotnet framework 4.5.2封装的，里面包括：小驼峰法命名出参规范类、出入参规范类、钉钉机器人帮助类、图片帮助类、文件帮助类、下载类、随机数帮助类、对象映射帮助类、字符串帮助类、验证码生成、时间帮助类、中国日历帮助类、任务下发帮助类等，后面将持续更新中…
 
 例如：UtilsCore.Result目录，该目录下的类为出入参规范类，其使用方法如下："BaseResult"类前后端接口返回参命名规范
